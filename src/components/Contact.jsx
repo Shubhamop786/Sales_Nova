@@ -141,19 +141,19 @@ function Contact() {
                     </h4>
                     <div className="flex flex-col space-y-1">
                       <a
-                        href="tel:+919876543210"
+                        href="tel:+917049006789"
                         className="text-blue-600 hover:underline"
                       >
                         +91 7049006789
                       </a>
                       <a
-                        href="tel:+918965951566"
+                        href="tel:+918817651339"
                         className="text-blue-600 hover:underline"
                       >
                         +91 8817651339
                       </a>
                       <a
-                        href="tel:+918965951567"
+                        href="tel:+917389407359"
                         className="text-blue-600 hover:underline"
                       >
                         +91 7389407359

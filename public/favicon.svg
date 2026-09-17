@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="256" fill="#2563eb"/>
+  <!-- Upward trending arrow / chart representing sales growth -->
+  <polyline points="80,380 180,260 270,310 400,140" fill="none" stroke="#ffffff" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Arrow head at top right -->
+  <polyline points="340,120 400,140 380,200" fill="none" stroke="#ffffff" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- "SN" monogram text -->
+  <text x="256" y="460" font-family="Arial, sans-serif" font-size="80" font-weight="bold" fill="#93c5fd" text-anchor="middle">SN</text>
+</svg>

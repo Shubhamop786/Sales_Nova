@@ -1,6 +1,8 @@
-
-@import url('https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+/* ============================================================
+   Sales Nova — Global CSS
+   Fonts and icons are now loaded via <link> tags in index.html
+   (non-render-blocking). The @import lines have been REMOVED.
+   ============================================================ */
 
 /* Tailwind CSS directives */
 @tailwind base;
@@ -9,16 +11,80 @@
 
 /* CSS variables */
 :root {
---font-pacifico: 'Pacifico', cursive;
---font-geist-sans: 'Inter', sans-serif;
---font-geist-mono: 'Source Code Pro', monospace;
+  --font-pacifico: 'Pacifico', cursive;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Source Code Pro', monospace;
+  --color-brand: #2563eb;
+  --color-brand-dark: #1d4ed8;
 }
 
-/* Global styles */
+/* Global base styles */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
-font-family: var(--font-geist-sans);
+  font-family: var(--font-sans);
+  /* font-display: swap is configured at the <link> level via &display=swap */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
+/* Pacifico brand font */
 .heading-pacifico {
-font-family: var(--font-pacifico);
+  font-family: var(--font-pacifico);
+}
+
+/* Improve focus visibility for accessibility / Lighthouse */
+:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Skip-to-content link for keyboard/screen-reader accessibility */
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-brand);
+  color: white;
+  padding: 8px 16px;
+  z-index: 9999;
+  font-weight: 600;
+  border-radius: 0 0 4px 0;
+  transition: top 0.2s;
+}
+
+.skip-to-content:focus {
+  top: 0;
+}
+
+/* Smooth scroll offset for fixed nav */
+[id] {
+  scroll-margin-top: 80px;
+}
+
+/* FAQ details/summary styling */
+details > summary {
+  cursor: pointer;
+  user-select: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

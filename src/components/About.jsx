@@ -20,7 +20,7 @@ function About() {
   }, []);
 
   return (
-    <div id="about" className="py-20 bg-gradient-to-b from-gray-50 to-white">
+    <section id="about" aria-labelledby="about-heading" className="py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div
@@ -30,58 +30,59 @@ function About() {
                 : "-translate-x-10 opacity-0"
             }`}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Why Choose
+            <h2 id="about-heading" className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Why Choose{" "}
               <span className="block text-blue-600">Sales Nova?</span>
             </h2>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              We specialize in team building, stockist & network development,
+              We specialize in team building, stockist &amp; network development,
               product grooming, team training, and overall sales growth—helping
-              companies maximize their market potential.
+              companies across India maximize their market potential in FMCG,
+              pharma, ayurvedic, and OTC sectors.
             </p>
 
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
-                <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1" aria-hidden="true">
                   <i className="ri-check-line text-blue-600 text-lg"></i>
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    Results-Driven Approach
+                    Results-Driven Sales Approach
                   </h3>
                   <p className="text-gray-600">
                     We focus on delivering measurable outcomes that directly
-                    impact your bottom line and business growth.
+                    impact your bottom line, revenue growth, and long-term business success.
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1" aria-hidden="true">
                   <i className="ri-team-line text-blue-600 text-lg"></i>
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    Expert Team Building
+                    Expert Team Building &amp; Training
                   </h3>
                   <p className="text-gray-600">
-                    Our specialized team building programs create
-                    high-performing teams that drive exceptional results.
+                    Our specialized team building and training programs create
+                    high-performing sales teams that drive exceptional, consistent results.
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1" aria-hidden="true">
                   <i className="ri-global-line text-blue-600 text-lg"></i>
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    Digital Innovation
+                    Digital Innovation &amp; Web Solutions
                   </h3>
                   <p className="text-gray-600">
                     We provide website development and chatbot solutions to keep
-                    your business ahead in the digital space.
+                    your business competitive and ahead in the digital marketplace.
                   </p>
                 </div>
               </div>
@@ -98,18 +99,22 @@ function About() {
             <div className="relative">
               <img
                 src="https://readdy.ai/api/search-image?query=Professional%20business%20consultancy%20team%20working%20together%20in%20modern%20office%20environment%2C%20diverse%20group%20of%20consultants%20analyzing%20data%20and%20strategies%2C%20collaborative%20workspace%20with%20charts%20and%20presentations%2C%20corporate%20success%20and%20growth%20mindset%2C%20bright%20professional%20lighting%20with%20blue%20accent%20colors&width=600&height=400&seq=about1&orientation=landscape"
-                alt="Sales Nova Team"
+                alt="Sales Nova consultancy team collaborating on business growth strategies in Bhopal office"
+                width="600"
+                height="400"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-96 object-cover rounded-2xl shadow-2xl"
               />
-              <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-2xl shadow-xl">
-                <div className="text-3xl font-bold">5+</div>
+              <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-2xl shadow-xl" aria-label="5 plus years of experience">
+                <div className="text-3xl font-bold" aria-hidden="true">5+</div>
                 <div className="text-sm">Years Experience</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -12,12 +12,21 @@ import Chatbot from './components/Chatbot';
 function App() {
   return (
     <div className="antialiased min-h-screen bg-white">
+      {/* Skip to main content — accessibility & Lighthouse best practice */}
+      <a href="#main-content" className="skip-to-content">
+        Skip to main content
+      </a>
+
       <Hero />
-      <About />
-      <Services />
-      {/* <Impact /> */}
-      <Team />
-      <Contact />
+
+      <main id="main-content">
+        <About />
+        <Services />
+        {/* <Impact /> */}
+        <Team />
+        <Contact />
+      </main>
+
       <Footer />
       <Chatbot />
     </div>

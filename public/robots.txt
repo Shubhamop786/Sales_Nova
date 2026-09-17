@@ -1,0 +1,12 @@
+# robots.txt for Sales Nova (https://salesnova.in)
+# Generated: 2026-09-17
+
+User-agent: *
+Allow: /
+
+# Keep build and data files out of search results
+Disallow: /dist/
+Disallow: /*.json$
+
+# Sitemap location
+Sitemap: https://salesnova.in/sitemap.xml

@@ -1,0 +1,21 @@
+{
+  "name": "Sales Nova",
+  "short_name": "Sales Nova",
+  "description": "Sales & Business Consultancy — Bhopal, India",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "lang": "en-IN",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity"],
+  "related_applications": []
+}

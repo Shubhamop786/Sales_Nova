@@ -35,10 +35,11 @@ function About() {
               <span className="block text-blue-600">Sales Nova?</span>
             </h2>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              We specialize in team building, stockist &amp; network development,
-              product grooming, team training, and overall sales growth—helping
-              companies across India maximize their market potential in FMCG,
-              pharma, ayurvedic, and OTC sectors.
+              Sales Nova is a sales and business consultancy for companies that
+              want a clearer sales strategy, stronger execution, and sustainable
+              market expansion. We help pharma, Ayurvedic, OTC, and FMCG
+              businesses improve sales growth through team building, product
+              grooming, and stockist and distributor network development.
             </p>
 
             <div className="space-y-6">

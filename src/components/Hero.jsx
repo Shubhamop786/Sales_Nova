@@ -33,7 +33,7 @@ function Hero() {
           <nav
             aria-label="Main navigation"
             role="navigation"
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+              className={`relative z-50 transition-all duration-300 ${
               scrolled
                 ? "bg-white/95 backdrop-blur-md shadow-lg"
                 : "bg-transparent"
@@ -146,7 +146,7 @@ function Hero() {
         </header>
 
         {/* Hero Content */}
-        <div className="relative z-10 flex items-center min-h-screen">
+        <div className="relative z-10 flex min-h-[calc(100vh-5rem)] items-center px-0 pt-10 pb-28 sm:py-12 lg:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <div className="max-w-3xl">
               {/*
@@ -154,15 +154,15 @@ function Hero() {
                 The brand name in the nav is now a styled <a> (not h1).
                 The h1 contains the primary keyword phrase for this page.
               */}
-              <h1 className="text-5xl md:text-7xl font-bold text-white mb-3 leading-tight animate-fade-in">
+              <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-3 leading-tight animate-fade-in">
                 Sales &amp; Business Consultancy India
               </h1>
               {/* Tagline — keeps the original Hindi character of the brand */}
               <p className="text-2xl md:text-3xl font-semibold text-blue-300 mb-4 italic animate-fade-in">
                 Aapke Vyapar ka Saathi
               </p>
-              <p className="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed animate-fade-in-delay">
-                Sales Nova is a results-driven consultancy firm empowering businesses across India with expert strategies in team building, sales growth, stockist network development, and digital solutions.
+              <p className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed animate-fade-in-delay">
+                Sales Nova helps pharma, Ayurvedic, OTC and FMCG businesses across India improve sales strategy, build stronger teams, develop stockist and distributor networks, and expand into new markets.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-delay-2">
                 <a

@@ -21,15 +21,21 @@
 /* Global base styles */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
 }
 
 body {
   font-family: var(--font-sans);
+  overflow-x: hidden;
   /* font-display: swap is configured at the <link> level via &display=swap */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+}
+
+#root {
+  overflow-x: clip;
 }
 
 /* Pacifico brand font */

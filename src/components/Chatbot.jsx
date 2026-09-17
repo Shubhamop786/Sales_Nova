@@ -131,7 +131,7 @@ function Chatbot() {
         aria-label={isOpen ? "Close chat with Sales Nova Assistant" : "Open chat with Sales Nova Assistant"}
         aria-expanded={isOpen}
         aria-controls="chatbot-panel"
-        className="fixed bottom-6 right-6 w-16 h-16 bg-blue-600 text-white rounded-full shadow-2xl hover:bg-blue-700 transition-all duration-300 z-50 flex items-center justify-center transform hover:scale-110 cursor-pointer"
+        className="fixed bottom-4 right-4 z-50 flex h-14 w-14 transform cursor-pointer items-center justify-center rounded-full bg-blue-600 text-white shadow-2xl transition-all duration-300 hover:scale-110 hover:bg-blue-700 sm:bottom-6 sm:right-6 sm:h-16 sm:w-16"
       >
         {isOpen ? (
           <i className="ri-close-line text-2xl" aria-hidden="true"></i>
@@ -153,7 +153,7 @@ function Chatbot() {
           role="dialog"
           aria-modal="true"
           aria-label="Sales Nova Assistant chat"
-          className="fixed bottom-24 right-6 w-96 h-[500px] bg-white rounded-2xl shadow-2xl z-50 flex flex-col border border-gray-200"
+          className="fixed bottom-20 right-4 z-50 flex h-[min(500px,calc(100vh-6rem))] w-[calc(100vw-2rem)] max-w-96 flex-col rounded-2xl border border-gray-200 bg-white shadow-2xl sm:bottom-24 sm:right-6"
         >
           {/* Header */}
           <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-4 rounded-t-2xl flex items-center justify-between">

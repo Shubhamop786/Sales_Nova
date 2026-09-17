@@ -24,35 +24,35 @@ const Services = () => {
       icon: 'ri-team-fill',
       title: 'Team Building',
       slug: 'team-building',
-      description: 'Build high-performing sales teams with our specialized team building programs designed to maximize collaboration, leadership, and productivity for FMCG and pharma businesses.',
+      description: 'Build high-performing sales teams with specialized team building programs that improve collaboration, leadership, and productivity for pharma, Ayurvedic, OTC, and FMCG businesses.',
       features: ['Leadership Development', 'Communication Skills', 'Team Dynamics', 'Performance Optimization']
     },
     {
       icon: 'ri-line-chart-fill',
       title: 'Sales Growth Consulting',
       slug: 'sales-growth',
-      description: 'Accelerate your sales performance with proven strategies and methodologies that drive measurable revenue growth across distribution channels and markets.',
+      description: 'Improve sales performance with practical sales strategy, pipeline management, territory planning, and market analysis that support measurable growth across channels.',
       features: ['Sales Strategy', 'Pipeline Management', 'Revenue Optimization', 'Market Analysis']
     },
     {
       icon: 'ri-global-fill',
       title: 'Stockist & Network Development',
       slug: 'network-development',
-      description: 'Expand your market reach through strategic stockist recruitment and distribution network development programs tailored for FMCG, pharma, and ayurvedic businesses.',
+      description: 'Expand market reach through stockist recruitment, distributor network development, and channel management tailored for pharma, Ayurvedic, OTC, and FMCG businesses.',
       features: ['Stockist Recruitment', 'Network Expansion', 'Channel Management', 'Partnership Development']
     },
     {
       icon: 'ri-graduation-cap-fill',
       title: 'Sales Team Training',
       slug: 'team-training',
-      description: 'Comprehensive sales training programs that enhance product knowledge, field skills, and sales techniques — driving consistent performance across your entire team.',
+      description: 'Train sales teams in product knowledge, field execution, consultative selling, territory coverage, and performance coaching for consistent commercial performance.',
       features: ['Skills Development', 'Product Training', 'Sales Techniques', 'Performance Coaching']
     },
     {
       icon: 'ri-shopping-bag-fill',
       title: 'Product Grooming',
       slug: 'product-grooming',
-      description: 'Optimize your products and services for maximum market appeal, competitive positioning, and effective brand communication to win in competitive categories.',
+      description: 'Improve product positioning, market communication, and brand development so pharma, Ayurvedic, OTC, and FMCG products can compete more effectively in target markets.',
       features: ['Product Strategy', 'Market Positioning', 'Brand Development', 'Competitive Analysis']
     },
     {
@@ -72,8 +72,8 @@ const Services = () => {
             Expert Sales &amp; Business{" "}
             <span className="block text-blue-600">Consulting Services</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We offer comprehensive sales consultancy and business development solutions to help FMCG, pharma, ayurvedic, and OTC companies build strong teams, grow distribution networks, and accelerate revenue.
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Our sales consultancy and business development services help pharma, Ayurvedic, OTC, and FMCG companies improve sales execution, grow distribution networks, strengthen teams, and expand across India.
           </p>
         </div>
 
@@ -127,6 +127,24 @@ const Services = () => {
               </summary>
               <p className="mt-4 text-gray-600 leading-relaxed">
                 Sales Nova is headquartered in Bhopal, Madhya Pradesh, India. We serve clients across India, providing on-ground consultancy, remote training, and digital support to businesses of all sizes.
+              </p>
+            </details>
+            <details className="bg-gray-50 rounded-2xl p-6 group">
+              <summary className="text-lg font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">
+                Can Sales Nova help improve pharma sales?
+                <i className="ri-arrow-down-s-line text-blue-600 text-xl transition-transform group-open:rotate-180" aria-hidden="true"></i>
+              </summary>
+              <p className="mt-4 text-gray-600 leading-relaxed">
+                Yes. Sales Nova helps pharma and OTC businesses improve sales strategy, train field teams, strengthen territory execution, recruit stockists, and develop distribution channels across India.
+              </p>
+            </details>
+            <details className="bg-gray-50 rounded-2xl p-6 group">
+              <summary className="text-lg font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">
+                Does Sales Nova consult for Ayurvedic and FMCG companies?
+                <i className="ri-arrow-down-s-line text-blue-600 text-xl transition-transform group-open:rotate-180" aria-hidden="true"></i>
+              </summary>
+              <p className="mt-4 text-gray-600 leading-relaxed">
+                Sales Nova supports Ayurvedic, FMCG, OTC, and pharma companies with sales growth consulting, product grooming, team development, stockist recruitment, and market expansion planning.
               </p>
             </details>
             <details className="bg-gray-50 rounded-2xl p-6 group">
